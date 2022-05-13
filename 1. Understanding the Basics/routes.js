@@ -2,6 +2,7 @@ const fs = require("fs");
 const reqRoutes = (req, res) => {
     const path = req.url;
     const method = req.method;
+
     if (path === "/") {
         res.write("<html>");
         res.write("<head><title>Basic Node js</title></head>");
